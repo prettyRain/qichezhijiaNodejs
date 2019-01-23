@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>登录页</title>
+    <link rel="stylesheet" href="/css/commen.css">
+    <link rel="stylesheet" href="/css/commenTop.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="athm-nav-channel">
+    <a class="nav-back"  href="javascript:window.history.back();"></a>
+    <a href="/" class="nav-main"></a>
+    <span class="nav-content">登录</span>
+    <i class="nav-search"></i>
+    <i class="nav-more"></i>
+    <div class="loginAndRegist">
+        <a href="/login">登录</a><a href="/regist">注册</a>
+    </div>
+</div>
+<h4 class="biaoti">
+    账号登录
+</h4>
+<form id="customer">
+    <p>
+        <span>账号</span><input type="text" placeholder="手机号/用户名/邮箱" name="username">
+    </p>
+    <p>
+        <span>密码</span><input type="password" placeholder="请输入密码" name="password">
+    </p>
+
+</form>
+<p class="bottonp">登录</p>
+<div class="rgba" style="display:none;background:rgba(0,0,0,.3);position:fixed;top:0;left:0;height:100%;width:100%;z-index:10002"></div>
+
+</body>
+</html>
+<script src="/js/commenTop.js" type="text/javascript"></script>
+<script src="/js/jquery-1.11.3.js" type="text/javascript"></script>
+<script>
+    $('.bottonp').on('click',function(){
+        if(!$('input[name=username]').val() || !$('input[name=password]').val()){
+            alert("用户密码不能为空");
+            return;
+        }
+        $.ajax({
+            data:$('#customer').serialize(),
+            type:"post",
+            url:'/doLogin',
+            success:function(data){
+                if(data=='-1'){
+                    alert("用户名不存在");
+                }else if(data=='-2'){
+                    alert("密码不正确");
+                }else{
+                    window.location.href = '/main';
+                }
+            }
+        })
+    })
+
+</script>

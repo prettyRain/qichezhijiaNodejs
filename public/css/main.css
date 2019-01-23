@@ -1,0 +1,251 @@
+
+.i-user-info {
+    height:207px;
+    background-color:#2873ff;
+}
+.i-user-info .user-info {
+    height:110px;
+    padding:20px 90px 20px 20px;
+}
+.i-user-info dl,.i-user-info dd{
+    float:left;
+}
+.i-user-info .user-img {
+    width:70px;
+    height:70px;
+    background:url('../img/index/head_50X50.png') no-repeat 0 0;
+    border-radius:35px;
+}
+.i-user-info .name {
+    padding:16px 0 5px 0px;
+    margin-left:20px;
+    color:#fff;
+    width:50%;
+    position:relative;
+}
+.i-user-info .name i {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background:url('../img/index/name.png') no-repeat -1.5px -23px;
+    background-size:21px auto;
+    transform:scale(.7) translate(0,2px);
+}
+.i-user-info .level {
+    margin-left:20px;
+    width:50%;
+    height:20px;
+    background:url('../img/index/lv1.png') no-repeat 0 0;
+    background-size:60px 20px;
+}
+
+.i-user-info .user-about {
+    height:57px;
+    margin:0 20px;
+    display:flex;
+    position:relative;
+    font-size:12px;
+}
+.i-user-info .user-about:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border-top:1px solid #fff;
+    opacity:0.2;
+
+}
+.i-user-info .user-about .guanzhu i {
+    color:#fff;
+    padding-top:3px;
+    padding-bottom:7px;
+    display:inline-block;
+    font-size:16px;
+}
+.i-user-info .user-about .guanzhu {
+    flex:1;
+    text-align:center;
+    color:#fff;
+    padding-top:7px;
+    padding-bottom:9px;
+    position:relative;
+}
+.i-user-info .user-about .guanzhu:after{
+    content:'';
+    position:absolute;
+    top:10%;
+    right:0;
+    height:80%;
+    border-left:1px solid #fff;
+    opacity:0.2;
+}
+.i-user-info .user-about .fenshi i {
+    color:#fff;
+    padding-top:3px;
+    padding-bottom:7px;
+    display:inline-block;
+    font-size:16px;
+}
+.i-user-info .user-about .fenshi{
+    flex:1;
+    text-align:center;
+    color:#fff;
+    padding-top:7px;
+    padding-bottom:9px;
+}
+
+
+.links-member {
+    margin-left:15px;
+    margin-right:15px;
+    background-color:#f8f8f8;
+    position:relative;
+}
+.links-member .links-member-a {
+    box-sizing:border-box;
+    position:absolute;
+    top:-37px;
+    width:100%;
+    height:74px;
+    padding:16px 10px 16px 20px;
+    background-color:#fff;
+    border-radius:3px;
+}
+.links-member .links-member-a p {
+    float:left;
+    width:42px;
+    height:42px;
+}
+.links-member .links-member-a p img {
+    width:42px;
+}
+.links-member .links-member-a span {
+    padding-left:10px;
+    display:inline-block;
+    line-height:42px;
+}
+.links-member .links-member-a i {
+    position:absolute;
+    right:15px;
+    top:50%;
+    margin-top:-3px;
+    width:6px;
+    height:6px;
+    border-top:1px solid #999;
+    border-right:1px solid #999;
+    transform:rotate(45deg);
+}
+.links-membertwo {
+    height:46px;
+    background-color:#f8f8f8;
+}
+.message-card {
+    margin:13px 15px 0 15px;
+}
+.message-card h4 {
+    padding-left:8px;
+    position:relative;
+}
+.message-card h4:before {
+    content:'';
+    width:3px;
+    height:14px;
+    background-color:#2873ff;
+    position:absolute;
+    top:0px;
+    left:0;
+}
+.message-card ul li {
+    text-align:center;
+    float:left;
+    width:20%;
+    height:50px;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:12px;
+}
+.message-card ul li img {
+    width:28px;
+    height:28px;
+    margin:0 auto 10px auto;
+    display:block;
+}
+
+.msc {
+  display:block;
+}
+.msc  img {
+    width:100%;
+}
+
+.wallet-card {
+    margin:13px 15px 0 15px;
+}
+.wallet-card h4 {
+    padding-left:8px;
+    position:relative;
+}
+.wallet-card h4:before {
+    content:'';
+    width:3px;
+    height:14px;
+    background-color:#2873ff;
+    position:absolute;
+    top:0px;
+    left:0;
+}
+.wallet-card ul {
+    margin-top:15px;
+}
+.wallet-card ul li {
+    text-align:center;
+    float:left;
+    width:25%;
+    height:42px;
+    padding-top:20px;
+    padding-bottom:25px;
+    font-size:12px;
+    color:#999;
+}
+.wallet-card ul li span{
+    display:block;
+    font-size:14px;
+    color:black;
+    padding-bottom:16px;
+}
+
+.mine-card {
+    border-top:10px solid #f8f8f8;
+    height:204px;
+    padding:13px  15px 0 15px;
+}
+.mine-card h4 {
+    padding-left:8px;
+    position:relative;
+}
+.mine-card h4:before {
+    content:'';
+    width:3px;
+    height:14px;
+    background-color:#2873ff;
+    position:absolute;
+    top:0px;
+    left:0;
+}
+.mine-card ul li {
+    text-align:center;
+    float:left;
+    width:25%;
+    height:42px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:12px;
+}
+.mine-card ul li img {
+    display:block;
+    width:28px;
+    height:28px;
+    margin : 0 auto 10px auto;
+}
+

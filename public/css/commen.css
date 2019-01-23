@@ -1,0 +1,19 @@
+
+*{margin:0px;padding:0px;color:#333;font-style:normal;}
+a{text-decoration:none;}
+div {
+    box-sizing:border-box;
+}
+ul {list-style:none;}
+
+.clear-fix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.clear-fix:before {
+    content:"";
+    display:table;
+    clear:both;
+}
+html {font: 16px/1 "PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei",STHeiTi,sans-serif;}

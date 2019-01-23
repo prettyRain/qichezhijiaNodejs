@@ -1,0 +1,30 @@
+.biaoti {
+    margin-top:36px;
+    font-size:25px;
+    padding-left:15px;
+    letter-spacing:1px;
+}
+#customer {
+    margin:35px 15px 0 15px;
+}
+#customer p {
+    line-height:50px;
+    border-bottom:1px solid #eee;
+}
+#customer input {
+    outline-style:none;
+    border:0;
+    margin-left:40px;
+    font-size:16px;
+}
+#customer input::-webkit-input-placeholder {
+    color: #bebebe;
+}
+.bottonp {
+    margin:30px  15px 21px 15px;
+    text-align:center;
+    line-height:44px;
+    background-color:#2873ff;
+    border-radius:5px;
+    color:#fff;
+}
